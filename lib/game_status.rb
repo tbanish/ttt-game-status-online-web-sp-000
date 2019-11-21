@@ -69,6 +69,7 @@ def winner(board)
       return nil
     end
   end
+  winner(board)
 end  
   
   
