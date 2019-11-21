@@ -23,7 +23,7 @@ def won?(board)
 			return win_combo
 		elsif empty_board
 		  return false
-		elsif full?(board) && (!win_combo.all? {index} board[index] == "X"} || !win_combo.all? {|index| board[index] == "O"})
+		elsif full?(board) && !win_combo.all? {index} board[index] == "X"} || !win_combo.all? {|index| board[index] == "O"}
 		  return false
 		end
 	end
