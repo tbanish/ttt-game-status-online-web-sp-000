@@ -62,9 +62,9 @@ end
 def winner(board)
   WIN_COMBINATIONS.each do |win_combo|
     if win_combo.all? {|index| board[index] == "X"}
-      return "X"
+      "X"
     elsif win_combo.all? {|index| board[index] == "O"}
-      return "O"
+      "O"
     else
       return nil
     end
