@@ -17,11 +17,11 @@ WIN_COMBINATIONS = [
 
 
 def won?(board) 
-	WIN_COMBINATIONS.each do |wincombo| 
-		if (board[wincombo[0]]) == "X" && (board[wincombo[1]]) == "X" && (board[wincombo[2]]) == "X" 
-			return wincombo 
-		elsif (board[wincombo[0]]) == "O" && (board[wincombo[1]]) == "O" && (board[wincombo[2]]) == "O" 
-			return wincombo
+	WIN_COMBINATIONS.each do |win_combo| 
+		if (board[win_combo[0]]) == "X" && (board[win_combo[1]]) == "X" && (board[win_combo[2]]) == "X" 
+			return win_combo 
+		elsif (board[win_combo[0]]) == "O" && (board[win_combo[1]]) == "O" && (board[win_combo[2]]) == "O" 
+			return win_combo
 		else
 		  return false
 		end
