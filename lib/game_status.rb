@@ -61,15 +61,14 @@ end
 
 def winner(board)
   WIN_COMBINATIONS.each do |win_combo|
-    if won?(board) && win_combo.all? {|index| board[index] == "X"}
+    if won?(board).all?("X")
       return "X"
-    elsif won?(board) && win_combo.all? {|index| board[index] == "O"}
+    elsif won?(board).all?("O")
       return "O"
     else
       return nil
     end
   end
-  winner(board)
 end  
   
   
