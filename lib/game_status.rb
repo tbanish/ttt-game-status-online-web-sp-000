@@ -58,8 +58,7 @@ def over?(board)
 end
 
 
-def winner(board)
-  WIN_COMBINATIONS.each do |win_combo|
+
     
   
   
